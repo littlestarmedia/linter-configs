@@ -1,23 +1,23 @@
 {
-  "extends": "airbnb",
+  "extends": "Wordpress",
   "env": {
     "browser": true,
-    "node": true,
+    "node": false,
+    "jquery": true,
     "es6": false,
-    "mocha": true
   },
   "rules": {
     "valid-jsdoc": ["error", {
-      "requireReturn": true,
-      "requireReturnType": true,
-      "requireParamDescription": true,
-      "requireReturnDescription": true
+      "requireReturn": false,
+      "requireReturnType": false,
+      "requireParamDescription": false,
+      "requireReturnDescription": false
     }],
     "require-jsdoc": ["error", {
         "require": {
-            "FunctionDeclaration": true,
-            "MethodDefinition": true,
-            "ClassDeclaration": true
+            "FunctionDeclaration": false,
+            "MethodDefinition": false,
+            "ClassDeclaration": false
         }
     }]
   }
